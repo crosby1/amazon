@@ -77,13 +77,26 @@
     <div class="row">
 
       <nav class="twelve columns">
-
         <?php print render($page['navigation']); ?>
       </nav><!--End NAVIGATION-->
 
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
+      <div class="twelve columns" id="establishment">
+        <?php print render($page['establishment_bar']); ?>
+      </div><!--End Establishment-->
+
+      <div class="twelve columns" id="featured_images">
+        <?php print render($page['featured_images']); ?>
+
+        <img class="first" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_one.png" />
+        <img src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_two.png" />
+        <img class="last" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_three.png" />
+      </div><!--End Establishment-->
+
+      <div class="twelve columns" id="introduction">
+        <?php print render($page['introduction']); ?>
+      </div><!--End Establishment-->
+
+
 
     <?php print render($page['header']); ?>
     </div>
@@ -92,9 +105,16 @@
 
 <div class="container">
 
-  <div class="row" id="content_container">
-    <?php print $messages; ?>
+  <div class="row"> 
+    <div id="paper">
+      <div id="content_container_top"></div>
+        <div id="content_container">
+          <?php print $messages; ?>
 
+          <div id="actual_content_container"></div>
+        </div>
+      <div id="content_container_bottom"></div>
+    </div><!--End Paper-->
   </div><!-- /#Content -->
 
 
