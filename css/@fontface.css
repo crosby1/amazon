@@ -1,0 +1,115 @@
+/* ===================================================================================
+    GENTIUM
+=================================================================================== */
+
+@font-face {
+    font-family: 'GentiumBasicRegular';
+    src: url('../fontkits/gentium/GenBasR-webfont.eot');
+    src: url('../fontkits/gentium/GenBasR-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBasR-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBasR-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBasR-webfont.svg#GentiumBasicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBasicItalic';
+    src: url('../fontkits/gentium/GenBasI-webfont.eot');
+    src: url('../fontkits/gentium/GenBasI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBasI-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBasI-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBasI-webfont.svg#GentiumBasicItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBasicBold';
+    src: url('../fontkits/gentium/GenBasB-webfont.eot');
+    src: url('../fontkits/gentium/GenBasB-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBasB-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBasB-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBasB-webfont.svg#GentiumBasicBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBasicBoldItalic';
+    src: url('../fontkits/gentium/GenBasBI-webfont.eot');
+    src: url('../fontkits/gentium/GenBasBI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBasBI-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBasBI-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBasBI-webfont.svg#GentiumBasicBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicRegular';
+    src: url('../fontkits/gentium/GenBkBasR-webfont.eot');
+    src: url('../fontkits/gentium/GenBkBasR-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBkBasR-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBkBasR-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBkBasR-webfont.svg#GentiumBookBasicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicItalic';
+    src: url('../fontkits/gentium/GenBkBasI-webfont.eot');
+    src: url('../fontkits/gentium/GenBkBasI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBkBasI-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBkBasI-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBkBasI-webfont.svg#GentiumBookBasicItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicBold';
+    src: url('../fontkits/gentium/GenBkBasB-webfont.eot');
+    src: url('../fontkits/gentium/GenBkBasB-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBkBasB-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBkBasB-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBkBasB-webfont.svg#GentiumBookBasicBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GentiumBookBasicBoldItalic';
+    src: url('../fontkits/gentium/GenBkBasBI-webfont.eot');
+    src: url('../fontkits/gentium/GenBkBasBI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/gentium/GenBkBasBI-webfont.woff') format('woff'),
+         url('../fontkits/gentium/GenBkBasBI-webfont.ttf') format('truetype'),
+         url('../fontkits/gentium/GenBkBasBI-webfont.svg#GentiumBookBasicBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ===================================================================================
+    HONEY SCRIPT
+=================================================================================== */
+
+@font-face {
+    font-family: 'honey_scriptsemibold';
+    src: url('../fontkits/honey/honeyscript-semibold-webfont.eot');
+    src: url('../fontkits/honey/honeyscript-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontkits/honey/honeyscript-semibold-webfont.woff') format('woff'),
+         url('../fontkits/honey/honeyscript-semibold-webfont.ttf') format('truetype'),
+         url('../fontkits/honey/honeyscript-semibold-webfont.svg#honey_scriptsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
