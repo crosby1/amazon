@@ -70,6 +70,7 @@
  */
 ?>
 
+<a id="admin_link" href="<?php print $base_path; ?>admin">Admin</a>
 
 
 <header id="header">
@@ -84,18 +85,20 @@
         <?php print render($page['establishment_bar']); ?>
       </div><!--End Establishment-->
 
-      <div class="twelve columns" id="featured_images">
-        <?php print render($page['featured_images']); ?>
-
-        <img class="first" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_one.png" />
-        <img src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_two.png" />
-        <img class="last" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_three.png" />
-      </div><!--End Establishment-->
-
       <div class="twelve columns" id="introduction">
         <?php print render($page['introduction']); ?>
-      </div><!--End Establishment-->
+      </div><!--End Introduction-->
+      
+      <?php if($is_front): ?>
+        <div class="twelve columns" id="featured_images">
+          <?php print render($page['featured_images']); ?>
+        
 
+          <img  class="first" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_one.png" />
+          <img  src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_two.png" />
+          <img  class="last" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_three.png" />
+        </div><!--End Featured Images-->
+      <?php endif; ?>
 
 
     <?php print render($page['header']); ?>
@@ -109,9 +112,59 @@
     <div id="paper">
       <div id="content_container_top"></div>
         <div id="content_container">
-          <?php print $messages; ?>
 
-          <div id="actual_content_container"></div>
+          <div class="twelve columns" id="drupal_native">
+            <?php print $messages; ?>
+            <?php print render($tabs); ?>
+          </div>
+
+          <?php if ($page['twelve_col_top']): ?>
+            <div class="twelve columns container_shadow" id="region_twelve_content_top">
+              <?php print render($page['twelve_col_top']); ?>
+            </div><!--End Region Twelve Content Top-->
+          <?php endif; ?>
+
+           <?php if ($page['twelve_col_view']): ?>
+            <div class="twelve columns container_view" id="region_twelve_content_view">
+              <?php print render($page['twelve_col_view']); ?>
+            </div><!--End Region Twelve Content Top-->
+          <?php endif; ?>
+
+
+          <?php if ($page['five_col_left']): ?>
+            <div class="five columns container_shadow" id="region_five_sidebar_left">
+              <?php print render($page['five_col_left']); ?>
+            </div><!--End Region Five Left Sidebar-->
+          <?php endif; ?>
+
+          <?php if ($page['seven_col']): ?>
+            <div class="seven columns container_shadow" id="region_seven_content">
+              <?php print render($page['seven_col']); ?>
+            </div><!--End Region Seven Content-->
+          <?php endif; ?>
+
+          <?php if ($page['featured_comment']): ?>
+            <div class="five columns container_shadow" id="region_featured_comment">
+              <div id="featured_comment_wrapper">
+                <?php print render($page['featured_comment']); ?>
+              </div>
+            </div><!--End Region Featured Comment-->
+          <?php endif; ?>
+
+          <?php if ($page['five_col_right']): ?>
+            <div class="five columns container_shadow" id="region_five_sidebar_right">
+              <?php print render($page['five_col_right']); ?>
+            </div><!--End Region Five Sidebar Right-->
+          <?php endif; ?>
+          
+
+          <?php if ($page['twelve_col_bottom']): ?>
+            <div class="twelve columns container_shadow" id="region_twelve_content_bottom">
+              <?php print render($page['twelve_col_bottom']); ?>
+            </div><!--End Region Twelve Content Bottom-->
+          <?php endif; ?>
+
+
         </div>
       <div id="content_container_bottom"></div>
     </div><!--End Paper-->

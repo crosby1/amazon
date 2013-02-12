@@ -1,0 +1,539 @@
+/*=======================================================================
+
+	❤❤❤ Gumby by Digital Surgeons. ❤❤❤
+	
+	*** This is where you should keep all of your design specific styles ***
+ 
+ ========================================================================*/
+
+html, body{
+	height: 100%;
+}
+
+body{
+	background: #fff url("../images/bodybg.png") repeat;
+}
+
+#drupal_native{
+	margin-bottom: 20px;
+	margin-left: 0;
+	display: none;
+}
+
+#admin_link{
+	position: fixed;
+	background: #fff;
+	padding: 10px;
+	border: 2px solid #ccc;
+	display: none;
+}
+
+/*======================================================================
+	HEADER
+======================================================================*/
+
+#header{
+	background: url("../images/Lines.png") repeat, url("../images/head_bg.png") repeat;
+	height: 650px;
+	background-position: 0px -300px;
+
+	#establishment{
+		margin-left: 0;
+		margin-top: 20px;
+		font-family: 'honey_scriptsemibold';
+		text-align: center;
+		color: #fff;	
+
+		p{
+			font-size: 4.5em;
+			margin: 0;
+
+			span{
+				color: #e74d41;
+				font-size: 0.9em;
+			}
+		}
+
+
+	}
+
+	#featured_images{
+		height: 220px;
+		margin-left: 0;
+		margin-top: 30px;
+
+		img{
+			width: 32%;
+		}
+
+		img.first{
+			margin-right: 1.5%;
+		}
+
+		img.last{
+			float: right;
+		}
+	}
+
+	#introduction{
+		margin-left: 0;
+		margin-top: 10px;
+		text-align: center;
+
+		p{
+			font-size:  1.2em;
+			width: 80%;
+			margin: 0 auto;
+			color: #fff;
+			line-height: 25px;
+		}
+	}
+
+}
+
+
+/*======================================================================
+	NAVIGATION
+======================================================================*/
+
+
+nav{
+	height: 50px;
+	background: url("../images/Lines.pn") rgba(0, 0, 0, 0.3);
+	-webkit-border-bottom-right-radius: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	padding: 0;
+	font-family: 'honey_scriptsemibold';
+
+	ul{
+		float: left;
+		width: 100%;
+		height: 50px;
+	}
+
+	li{
+		text-align: center;
+		float: left;
+		width: 16.579%;
+		height: 50px;
+		border-right: 0px solid;
+		border-color: rgba(255, 255, 255, 0.1);
+		-webkit-transition: background 0.5s linear;
+		-moz-transition: background 0.5s linear;
+		-ms-transition: background 0.5s linear;
+		-o-transition: background 0.5s linear;
+		transition: background 0.5s linear;
+
+		.last{
+			border-right: none;
+		}
+
+		a{
+			width: 100%;
+			height: 100%;
+			float: left;
+			font-size: 1.7em;
+			color: #fff;
+		}
+
+		&:hover{
+			background:  rgba(0,0,0,0.4);
+			border-bottom: 2px solid;
+			border-color: rgba(231,77,65,0.5);
+
+			a{
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+/*======================================================================
+	ACTIVE LINKS
+======================================================================*/
+
+.front nav li > a.active{
+	background:  rgba(0,0,0,0.4);
+	border-bottom: 2px solid;
+	border-color: rgba(231,77,65,0.5);
+} 
+
+
+.not-front nav li > a.active{
+	background:  rgba(0,0,0,0.4);
+	border-bottom: 2px solid;
+	border-color: rgba(231,77,65,0.5);
+} 
+
+.section-acc nav li > a.active{
+	background:  rgba(0,0,0,0.4);
+	border-bottom: 2px solid;
+	border-color: rgba(231,77,65,0.5);
+} 
+
+.front #paper{
+	margin-top: -100px;
+	margin-bottom: 100px;
+}
+
+.not-front #paper{
+	margin-top: -300px;
+	margin-bottom: 100px;
+}
+
+/*======================================================================
+	MAIN CONTENT
+======================================================================*/
+
+
+#content_container{
+	background: url("../images/paper_mid.png") repeat;
+	min-height: 400px;
+	margin-top: 0px;
+	width:96%;
+	padding: 2%;
+	padding-bottom: 50px;
+	float: left;
+}
+
+#content_container_top{
+	height:13px;
+	width: 100%;
+	background: url("../images/paper_top.png") repeat-x;
+	float: left;
+	margin-top: -10px;
+}
+#content_container_bottom{
+	height:23px;
+	width: 100%;
+	background: transparent url("../images/paper_bottom.png") repeat-x;
+	float: left;
+	margin-top: 0px;
+}
+
+
+.container_shadow{
+	background: #fff;
+	box-shadow: 1px 1px 2px #e7e7e7;
+	margin-left: 0;
+	width: 96%;
+	padding: 2%;
+	margin-bottom: 20px;
+}
+
+
+/*======================================================================
+	REGIONS
+======================================================================*/
+
+#region_twelve_content_top,
+#region_twelve_content_bottom{
+	float:  left;
+}
+
+#region_five_sidebar_right, 
+#region_featured_comment{
+	float: right;
+
+}
+
+#region_seven_content{
+	min-height: 400px;
+}
+
+#region_twelve_content_view{
+	margin-left: 0;
+}
+
+#region_featured_comment{
+	padding: 1%;
+}
+
+
+/*======================================================================
+	FEATURED COMMENT
+======================================================================*/
+
+
+#featured_comment_wrapper{
+	background: #e74d41;
+	width: 94%;
+	padding: 3%;
+	color: #fff;
+
+	p{
+		
+		
+		font-family: 'GentiumBasicItalic';
+	}
+
+	.views-field-field-guest-comment-feedback{
+		font-family: 'GentiumBasicItalic';
+		line-height: 18px;
+	}
+
+	.views-field-title{
+		display: block;
+		text-align: right;
+		font-family: 'honey_scriptsemibold';
+		font-size: 1.8em;
+	}
+}
+
+
+/*======================================================================
+	ACCOMMODATION VIEW INSTANCE
+======================================================================*/
+
+.accommo_view_instance_container{
+
+	width: 32%;
+	height: 400px;
+	margin-right: 2%;
+	float: left;
+	background: #fff;
+	box-shadow: 0px 1px 1px #e7e7e7;
+	position: relative;
+	z-index:0;
+	margin-bottom: 50px;
+	border-radius: 2px;
+	padding-top: 10px;
+
+	.accommo_view_instance_desc{
+		width: 94%;
+		padding-left: 3%;	
+		padding-right: 3%;
+		font-size: 0.9em;
+		line-height: 16px;
+	}
+
+	header{
+		width: 94%;
+		padding-left: 3%;	
+		padding-right: 3%;
+		font-size: 1.2em;
+		border-bottom: 1px dotted #e7e7e7;
+		margin-bottom: 10px;
+	}
+
+
+	.accommo_view_instance_price{
+		color: #fff;
+		text-align: center;
+
+		p{
+			float: left;
+		}
+	}
+
+	.accommo_view_instance_price_tag{
+		background: #e74d41;
+		width: 100%;
+		height: 22px;
+		margin-top:  10px;
+		font-size: 12px;
+		padding-top: 8px;
+	}
+
+}
+
+
+.views-row-3 .accommo_view_instance_container,
+.views-row-6 .accommo_view_instance_container,
+.views-row-9 .accommo_view_instance_container,
+.views-row-12 .accommo_view_instance_container,
+.views-row-15 .accommo_view_instance_container,
+.views-row-18 .accommo_view_instance_container,
+.views-row-21 .accommo_view_instance_container,
+.views-row-24 .accommo_view_instance_container,
+.views-row-27 .accommo_view_instance_container,
+.views-row-30 .accommo_view_instance_container{
+	margin-right: 0;
+	float: right;
+}
+
+.view-display-id-acc_full_display{
+	.views-field-title{
+		font-size: 1.4em;
+		font-family: 'GentiumBookBasicItalic';
+	}
+}
+
+
+/*======================================================================
+	TERMS & CONDITIONS BLOCK
+======================================================================*/
+
+/*  Terms And Conditions  */
+
+#block-block-7{			
+	p{
+		font-size: 1em;
+		line-height: 15px;
+	}
+
+	h2{			
+		font-size: 1em;
+	}
+}
+
+
+
+#block-block-5{				/*  Website Introduction */
+	header{
+		font-size: 1.9em;
+		font-weight: bold;
+		color: #252525;
+		line-height: 30px;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 15px;
+	}
+}
+
+.view-specials{
+	table{
+		border: none;
+	}
+
+	thead{
+		height: 50px;
+	}
+
+	.views-field-field-special-desc{
+		font-size: 1.0em;
+		color: #252525;
+		p{
+			font-weight: bold;
+		}
+	}
+
+	.views-field-field-special-image{
+		img{
+			min-width: 150px;
+			height: 150px;
+		}
+	}
+
+}
+
+
+.node-guest_comments-form{
+
+	input[type="text"]{
+		width: 94%;
+		padding: 3%;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+	}
+
+	textarea{
+		width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+		padding: 3%;
+	}
+
+	.filter-wrapper{
+		display: none;
+	}
+}
+
+.views-row-last .special_view_instance_container{
+	border-bottom: none;
+}
+
+
+.special_view_instance_container{
+	float: left;
+	margin-bottom: 30px;
+	width: 100%;
+	border-bottom:  1px dashed #ccc;
+	padding-bottom: 20px;
+
+	header{
+		float: left;
+		width: 46%;
+		height: 30px;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-top: 10px;
+		background: #e74d41;
+		color: #fff;
+		-webkit-border-top-left-radius: 2px;
+		-moz-border-radius-topleft: 2px;
+		border-top-left-radius: 2px;
+	}
+
+	.special_view_instance_desc{
+		padding: 10px;
+		float: left;
+		width: 650px;
+
+	}
+
+	.special_view_instance_rate_date{
+		float: left;
+		width: 50%;
+		height: 40px;
+
+		.special_view_instance_rate{
+			float: left;
+			width: 50%;
+			height: 30px;
+			padding-top: 10px;
+			background: #e8dddc;
+			text-align: center;
+		}
+
+		.special_view_instance_date{
+			float: left;
+			width: 50%;
+			height: 30px;
+			padding-top: 10px;
+			background: #e8e8e8;
+			text-align: center;
+			-webkit-border-top-right-radius: 2px;
+			-moz-border-radius-topright: 2px;
+			border-top-right-radius: 2px;
+
+		}
+	}
+
+	img{
+		float: left;
+	}
+}
+
+.gallery_view_instance_container{
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+
+	.gallery_view_instance_img{
+		background: #fff;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		box-shadow: 1px 1px 2px #e7e7e7;
+		margin-bottom: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+
+		img{
+			width: 100%;
+		}
+	}
+
+
+}
+
+.views-row-last .gallery_view_instance_container{
+	float: right;
+	margin-right: 0;
+}
