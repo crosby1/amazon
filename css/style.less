@@ -387,11 +387,10 @@ nav{
 #block-block-5{				/*  Website Introduction */
 	header{
 		font-size: 1.9em;
-		font-weight: bold;
-		color: #252525;
 		line-height: 30px;
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 15px;
+		font-family: 'GentiumBookBasicItalic';
 	}
 }
 
@@ -513,6 +512,43 @@ nav{
 	float: left;
 	width: 32%;
 	margin-right: 2%;
+	margin-bottom: 20px;
+
+	.overlay{
+		background: #fff;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		box-shadow: 1px 1px 2px #e7e7e7;
+		text-align: center;
+		color: #fff;
+		height: 80px;
+		
+
+		.overlay_int{
+			background: #e74d41;
+			width: 96%;
+			height: 90%;
+			margin-top: 1.5%;
+			margin-left: 2%;
+			float: left;
+		}
+
+		header{
+			margin-top: 10px;
+			font-family: 'GentiumBookBasicItalic';
+			font-size: 0.9em;
+		}
+
+		.gallery_view_instance_caption{
+			margin-left: 10px;
+			margin-right: 10px;
+			line-height: 11px;
+			font-size: 0.8em;
+		}
+
+	}
+
 
 	.gallery_view_instance_img{
 		background: #fff;
@@ -521,19 +557,28 @@ nav{
 		border-radius: 2px;
 		box-shadow: 1px 1px 2px #e7e7e7;
 		margin-bottom: 10px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		width: 100%;
+
 
 
 		img{
-			width: 100%;
+			width: 96%;
+			margin-left: 2%;
+			margin-top: 2%;
 		}
 	}
 
 
+
+
 }
 
-.views-row-last .gallery_view_instance_container{
+.views-row-3 .gallery_view_instance_container,
+.views-row-6 .gallery_view_instance_container,
+.views-row-9 .gallery_view_instance_container,
+.views-row-12 .gallery_view_instance_container,
+.views-row-15 .gallery_view_instance_container,
+.views-row-18 .gallery_view_instance_container,{
 	float: right;
 	margin-right: 0;
 }
