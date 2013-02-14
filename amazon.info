@@ -83,6 +83,8 @@ stylesheets[all][] = css/@fontface.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+;scripts[] = js/placeholder.js
+scripts[] = js/jquery.inputlabels.js
 
 
 
