@@ -85,9 +85,11 @@
         <?php print render($page['establishment_bar']); ?>
       </div><!--End Establishment-->
 
-      <div class="twelve columns" id="introduction">
-        <?php print render($page['introduction']); ?>
-      </div><!--End Introduction-->
+      <?php if($is_front): ?>
+        <div class="twelve columns" id="introduction">
+          <?php print render($page['introduction']); ?>
+        </div><!--End Introduction-->
+      <?php endif; ?>
       
       <?php if($is_front): ?>
         <div class="twelve columns" id="featured_images">
@@ -98,6 +100,12 @@
           <img  src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_two.png" />
           <img  class="last" src="<?php print $base_path; ?>sites/all/themes/amazon/images/feat_three.png" />
         </div><!--End Featured Images-->
+      <?php endif; ?>
+
+      <?php if(!$is_front): ?>
+        <div class="page_title">
+          <?php print $title; ?>
+        </div>
       <?php endif; ?>
 
 

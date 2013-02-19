@@ -1,0 +1,21 @@
+#header{
+	background: #252525 url("../images/head_bg.png") repeat;
+	height: 650px;
+}
+
+nav{
+	background: url("../images/nav_bg.png") repeat;
+}
+
+nav li:hover{
+	border-bottom: 2px solid #e74d41;
+
+	a{
+		color: #fff;
+	}
+}
+
+.front nav li > a.active,
+.not-front nav li > a.active{
+	border-bottom: 2px solid #e74d41;
+} 

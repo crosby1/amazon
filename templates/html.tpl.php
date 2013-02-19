@@ -85,9 +85,48 @@
     <meta name="viewport" content="width=device-width">
   <?php endif; ?>
   <meta http-equiv="cleartype" content="on">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
   <?php print $styles; ?>
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="<?php print $base_path; ?>sites/all/themes/amazon/css/ie7.css">
+  <![endif]-->
   <?php print $scripts; ?>
+
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript">
+              function initialize() {
+                var latlng = new google.maps.LatLng(-29.869902,30.996894);
+                var settings = {
+                  zoom: 15,
+                  scrollwheel: false,
+                  center: latlng,
+                  mapTypeControl: true,
+                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                  navigationControl: true,
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                  var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+
+                  var companyLogo = new google.maps.MarkerImage('img/basizimarker.png',
+                  new google.maps.Size(150,63),
+                  new google.maps.Point(0,0),
+                  new google.maps.Point(50,50)
+                );
+
+                var companyPos = new google.maps.LatLng(-29.869902, 30.996894);
+                var companyMarker = new google.maps.Marker({
+                    position: companyPos,
+                    icon: companyLogo,
+                    map: map,
+                    title:"Basizi Data Solutions"
+                });
+              }
+
+
+  </script>
   <?php if ($add_respond_js): ?>
     <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5-respond.js"></script>
@@ -97,8 +136,9 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
     <![endif]-->
   <?php endif; ?>
+
 </head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body onload="initialize()" class="<?php print $classes; ?>" <?php print $attributes;?>>
 
   <?php print $page_top; ?>
   <?php print $page; ?>
